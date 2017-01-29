@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="debug.js"></script>
+		<script src="hide.js"></script>
+		<script src="part1.js"></script>
+                                        <!--
+                                        	作者：ljl2010ban@163.com
+                                        	时间：2016-12-02
+                                        	描述：引入JavaScript库
+                                        -->
+	</head>
+	<body>
+		<p>This is a paragraph of HTML</p>
+		<script>//可以从这里编写嵌入到HTML文件中的JavaScript代码
+		    function moveon(){
+		    	//通过弹出对话框询问用户问题
+		    	var answer = confirm("Are you Ready?");
+		    	//if you click sure, it will move to the new url
+		    	if (answer)
+		    	    window.location = "https://baidu.com"
+		    }
+		    //setTimeout(moveon(), 6000)
+		</script>
+		<p>Here is more HTML.</p>
+		Test hide.js and debug.js
+		<button onclick="hide(this, true); debug('hide button 1');">Hide1</button>
+		<button onclick="hide(this); debug('hide button 2')">Hide2</button>
+		World.
+	</body>
+</html>
